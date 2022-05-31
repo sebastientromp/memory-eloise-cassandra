@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 202e22f759790f54f8197f91214d22d2, type: 3}
+  m_Name: GameConfig
+  m_EditorClassIdentifier: 
+  cardsData:
+  - sprite: {fileID: 21300000, guid: 284d6e5efdbbace43a07ec2304f3d838, type: 3}
+    matchSound: {fileID: 8300000, guid: 73dd569e14a188b4b8bee4d2e967efcd, type: 3}
+  - sprite: {fileID: 21300000, guid: 74feae84f8031d34fbc3853c26134e47, type: 3}
+    matchSound: {fileID: 8300000, guid: 73dd569e14a188b4b8bee4d2e967efcd, type: 3}
+  - sprite: {fileID: 21300000, guid: a4e516139d40de441926bfeeb8a75408, type: 3}
+    matchSound: {fileID: 8300000, guid: 73dd569e14a188b4b8bee4d2e967efcd, type: 3}
+  - sprite: {fileID: 21300000, guid: e3226f24cf61fcf46bacd8ff30f8a5dc, type: 3}
+    matchSound: {fileID: 8300000, guid: 73dd569e14a188b4b8bee4d2e967efcd, type: 3}
+  cardBack: {fileID: 21300000, guid: 8e674373aceaa0a4d943a4b8ad171e4c, type: 3}
+  numberOfPairs: 4
+  wonAudio: {fileID: 8300000, guid: e2f36a67e59263645a3376b651f75219, type: 3}
