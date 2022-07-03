@@ -9,4 +9,6 @@ public class GameConfig : ScriptableObject
     public Sprite cardBack;
     public int numberOfPairs;
     public AudioClip wonAudio;
+    public AudioClip clickOnCardAudio;
+    public AudioClip nonMatchingCardsAudio;
 }

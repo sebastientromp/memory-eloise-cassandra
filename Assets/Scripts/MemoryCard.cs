@@ -7,6 +7,7 @@ public class MemoryCard : MonoBehaviour
 {
     public LiveCardInfo liveData;
     public CardEventChannel CardEventChannel;
+    public GameConfig gameConfig;
 
     private GameObject cardBack;
     private GameObject cardFront;
@@ -14,6 +15,7 @@ public class MemoryCard : MonoBehaviour
     private void Awake()
     {
         cardBack = transform.Find("Back/Icon").gameObject;
+        cardBack.GetComponent<SpriteRenderer>().sprite = gameConfig.cardBack;
         cardFront = transform.Find("Front/Icon").gameObject;
         cardFront.SetActive(false);
     }

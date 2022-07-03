@@ -13,11 +13,6 @@ public class GameController : MonoBehaviour
 
     private MemoryGrid memoryGrid;
 
-    private void Awake()
-    {
-        GetComponent<AudioSource>().clip = gameConfig.wonAudio;
-    }
-
     private void Start()
     {
         // Clean existing
@@ -92,6 +87,10 @@ public class GameController : MonoBehaviour
             isClickHandlerRunning = false;
             yield break;
         }
+
+        GetComponent<AudioSource>().clip = gameConfig.clickOnCardAudio;
+        GetComponent<AudioSource>().Play();
+
         liveData.IsFaceUp = true;
         Debug.Log($"Turning face up? {liveData.CardData.sprite} {liveData.IsFaceUp}");
 
@@ -113,7 +112,14 @@ public class GameController : MonoBehaviour
         Debug.Log($"matchingCards {liveData.CardData.sprite} {string.Join(", ", matchingCards.Select(c => c.CardData.sprite))}");
         if (matchingCards.Count == 2)
         {
+            yield return new WaitForSeconds(0.4f);
             card.PlayMatchingSound();
+        } 
+        else
+        {
+            yield return new WaitForSeconds(0.4f);
+            GetComponent<AudioSource>().clip = gameConfig.nonMatchingCardsAudio;
+            GetComponent<AudioSource>().Play();
         }
 
         yield return new WaitForSeconds(2);
@@ -128,6 +134,7 @@ public class GameController : MonoBehaviour
 
         if (memoryGrid.CardInfo.All(c => c.IsAlreadyMatched))
         {
+            GetComponent<AudioSource>().clip = gameConfig.wonAudio;
             GetComponent<AudioSource>().Play();
             yield return new WaitForSeconds(2);
             Debug.Log("Starting again!");

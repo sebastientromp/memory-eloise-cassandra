@@ -13,14 +13,16 @@ MonoBehaviour:
   m_Name: GameConfig
   m_EditorClassIdentifier: 
   cardsData:
-  - sprite: {fileID: 21300000, guid: 284d6e5efdbbace43a07ec2304f3d838, type: 3}
-    matchSound: {fileID: 8300000, guid: 73dd569e14a188b4b8bee4d2e967efcd, type: 3}
-  - sprite: {fileID: 21300000, guid: 74feae84f8031d34fbc3853c26134e47, type: 3}
-    matchSound: {fileID: 8300000, guid: 73dd569e14a188b4b8bee4d2e967efcd, type: 3}
-  - sprite: {fileID: 21300000, guid: a4e516139d40de441926bfeeb8a75408, type: 3}
-    matchSound: {fileID: 8300000, guid: 73dd569e14a188b4b8bee4d2e967efcd, type: 3}
-  - sprite: {fileID: 21300000, guid: e3226f24cf61fcf46bacd8ff30f8a5dc, type: 3}
-    matchSound: {fileID: 8300000, guid: 73dd569e14a188b4b8bee4d2e967efcd, type: 3}
-  cardBack: {fileID: 21300000, guid: 8e674373aceaa0a4d943a4b8ad171e4c, type: 3}
+  - sprite: {fileID: 21300000, guid: ddbf5b4a717248b4790f0a1dff839aa5, type: 3}
+    matchSound: {fileID: 8300000, guid: 483fba2e0e987b742861d3de00f6acc8, type: 3}
+  - sprite: {fileID: 21300000, guid: 607617c38a7467c469a38830216f90ba, type: 3}
+    matchSound: {fileID: 8300000, guid: cbd1761ff203ade4885b1a3e673fc76d, type: 3}
+  - sprite: {fileID: 21300000, guid: 5f37704146a1dc14f8947b2c4327d5eb, type: 3}
+    matchSound: {fileID: 8300000, guid: e282b08932981ed4882e60f7ef8e186e, type: 3}
+  - sprite: {fileID: 21300000, guid: f6016b6bc6f4ac148958696880101e33, type: 3}
+    matchSound: {fileID: 8300000, guid: 23033f5eebb1ca248993de0e20f46214, type: 3}
+  cardBack: {fileID: 21300000, guid: 2ae72c8ecfd30b24fab65fadc6344210, type: 3}
   numberOfPairs: 4
   wonAudio: {fileID: 8300000, guid: e2f36a67e59263645a3376b651f75219, type: 3}
+  clickOnCardAudio: {fileID: 8300000, guid: a8e457af6dc361e419111d1480438342, type: 3}
+  nonMatchingCardsAudio: {fileID: 8300000, guid: 217e863513fd5bc46927809dc434d9ed, type: 3}
